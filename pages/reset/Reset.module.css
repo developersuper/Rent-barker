@@ -1,0 +1,132 @@
+/* Logo Bar */
+
+.logo_bar {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 576px) {
+  .logo_bar {
+    display: none;
+  }
+}
+
+.logo_bar_mid {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 576px) {
+  .logo_bar_mid {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .logo_bar_mid {
+    display: none;
+  }
+}
+
+/* Main */
+
+.main_img {
+  display: none;
+  position: relative;
+}
+
+.main_back {
+  width: auto;
+  height: 100vh;
+}
+
+.logo {
+  position: absolute;
+  z-index: 1;
+  left: 64px;
+  bottom: 64px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .main_img {
+    display: block;
+  }
+}
+
+.main_content {
+  width: 100%;
+  margin: 28px auto;
+  padding: 0 16px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.17;
+}
+
+.form {
+  margin: 36px 0 18px;
+}
+
+.email_box {
+  width: 100%;
+  height: 46px;
+  margin-bottom: 36px;
+  padding: 14px 16px;
+  border: 1px solid #c9d6d5;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.email_box::placeholder {
+  font-weight: 500;
+  color: #adadad;
+}
+
+.bottom_text {
+  font-size: 14px;
+  line-height: 1.43;
+  color: #7a7a7a;
+}
+
+.bottom_link {
+  margin: 6px 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #126660;
+  transition: 0.3s;
+}
+
+.bottom_link:hover {
+  color: grey;
+}
+
+@media only screen and (min-width: 576px) {
+  .main_content {
+    width: 380px;
+    padding: 0;
+  }
+  .title {
+    font-size: 36px;
+    line-height: 1.22;
+  }
+  .form {
+    margin: 48px 0;
+  }
+  .email_box {
+    height: 50px;
+    margin-bottom: 48px;
+  }
+  .bottom_text {
+    font-size: 15px;
+    line-height: 1.33;
+  }
+  .bottom_link {
+    margin: 4px 5px;
+    font-size: 16px;
+  }
+}

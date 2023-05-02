@@ -1,0 +1,510 @@
+/* Navbar */
+
+.navbar {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    display: block;
+  }
+}
+
+/* Header */
+
+.header {
+  display: block;
+  background-image: url("../../public/pattern.jpg");
+}
+
+.chevron_left {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  width: 16px;
+  height: auto;
+  color: white;
+  opacity: 0.6;
+}
+
+.brand {
+  display: inline-block;
+  margin: 18px 0 20px;
+}
+
+.header_step {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  margin-bottom: 19px;
+}
+
+.progress_bar {
+  display: flex;
+  width: 100%;
+  height: 6px;
+}
+
+.progress_step_one {
+  width: 25%;
+  background-color: #ff8e47;
+}
+
+.progress_step_two {
+  width: 50%;
+  background-color: #ff8e47;
+}
+
+.progress_step_three {
+  width: 75%;
+  background-color: #ff8e47;
+}
+
+.progress_step_four {
+  width: 100%;
+  background-color: #ff8e47;
+}
+
+.progress_step_rest {
+  flex-grow: 1;
+  background-color: black;
+  opacity: 0.35;
+}
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    display: none;
+  }
+}
+
+/* Main */
+
+@media only screen and (min-width: 1024px) {
+  .main_content {
+    display: flex;
+    max-width: 1008px;
+    margin: 50px auto;
+    border: 1px solid #d3dbde;
+    border-radius: 4px;
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+}
+
+/* Left Progress Content */
+
+.left_content {
+  display: none;
+  width: 267px;
+  padding-top: 52px;
+  padding-left: 48px;
+  background-image: url("../../public/pattern.jpg");
+}
+
+.progress_header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 57px;
+}
+
+.progress_header_text {
+  margin-left: 21px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.54;
+  letter-spacing: 0.6px;
+  color: white;
+}
+
+.progress_step {
+  display: flex;
+  align-items: center;
+}
+
+.progress_step_text {
+  margin-left: 24px;
+}
+
+.progress_step_title_orange, .progress_step_title_grey {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.progress_step_title_orange {
+  color: #ff8e47;
+}
+
+.progress_step_title_grey {
+  color: white;
+  opacity: 0.25;
+}
+
+.progress_step_detail_white, .progress_step_detail_grey {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.progress_step_detail_grey {
+  opacity: 0.5;
+}
+
+.progress_divider_grey, .progress_divider_white {
+  width: 1px;
+  height: 48px;
+  margin: 8px 21px;
+  background-color: white;
+}
+
+.progress_divider_grey {
+  opacity: 0.25;
+}
+
+@media only screen and (min-width: 1024px) {
+  .left_content {
+    display: block;
+  }
+}
+
+/* Right Form Content */
+
+.right_content {
+  padding: 28px 16px;
+}
+
+.primary_title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.primary_detail {
+  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #888e8e;
+}
+
+.secondary_title {
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.input_box {
+  height: 46px;
+  margin-bottom: 32px;
+  border: 1px solid #c9d6d5;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.input_box:hover, .input_box:active, .input_box:focus {
+  border-color: #126660;
+  box-shadow: none !important;
+}
+
+.input_box::placeholder {
+  font-weight: normal;
+  color: #888e8e;
+}
+
+.grey_text {
+  display: inline-block;
+  padding-top: 4px;
+  font-weight: normal;
+  color: #888e8e;
+}
+
+@media only screen and (min-width: 1024px) {
+  .right_content {
+    width: 741px;
+    padding: 40px 40px 48px 48px;
+  }
+  .primary_title {
+    font-size: 28px;
+  }
+  .primary_detail {
+    margin-bottom: 40px;
+  }
+  .secondary_title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: normal;
+  }
+}
+
+/* ---------------------- Additional Information Page ---------------------- */
+
+.radio_group {
+  margin-bottom: 20px;
+}
+
+.radio_btn {
+  opacity: 1;
+  margin: 0;
+}
+
+.radio_check {
+  width: 14px;
+  height: auto;
+  margin-top: -5px;
+  margin-left: -1px;
+  margin-right: 5px;
+}
+
+.green_text {
+  color: #126660;
+}
+
+/* ---------------------- Employment Information Page ---------------------- */
+
+.add_text {
+  margin-left: 7px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  color: #56918d;
+}
+
+/* ---------------------- Review & Submit Page ---------------------- */
+
+.edit_link {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  color: #126660;
+  /* opacity: 0.75; */
+  transition: 0.3s;
+}
+
+.edit_link:hover {
+  color: grey;
+}
+
+.info_title {
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #888e8e;
+}
+
+.info_detail {
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.38;
+}
+
+/* ---------------------- Approve Brochure Page ---------------------- */
+
+.approve_main {
+  background-image: url("../../public/pattern.jpg");
+}
+
+.approve_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.check_icon {
+  width: 61px;
+  height: auto;
+  margin: 24px 0;
+}
+
+.approve_primary_title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.approve_primary_detail {
+  margin: 12px 0;
+  font-size: 14px;
+  line-height: 1.43;
+  color: white;
+  opacity: 0.6;
+}
+
+.check_label {
+  font-size: 14px;
+  line-height: 1.57;
+  color: white;
+}
+
+.check_box {
+  position: relative;
+  top: 2px;
+  margin-right: 12px;
+}
+
+.check_box[type=checkbox] {
+  transform: scale(1.2);
+}
+
+.approve_link_active, .approve_link_inactive {
+  display: flex;
+  align-items: center;
+  margin: 24px 0 32px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+}
+
+.approve_link_active {
+  color: #fa893c;
+  transition: 0.3s;
+}
+
+.approve_link_active:hover {
+  text-decoration: underline;
+  color: grey;
+}
+
+.approve_link_inactive, .approve_link_inactive:hover {
+  text-decoration: underline;
+  color: white;
+  opacity: 0.4;
+  cursor: auto;
+}
+
+.arrow_right {
+  width: 16px;
+  margin-left: 10px;
+}
+
+.approve_content {
+  padding: 20px 15px;
+  background-color: white;
+}
+
+.approve_username {
+  margin-left: 16px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.approve_summary_item {
+  margin-top: 19px;
+}
+
+.approve_icon {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.approve_title {
+  font-size: 14px;
+  line-height: 1.57;
+  color: #888e8e;
+}
+
+.approve_detail {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.57;
+}
+
+.approve_section_title {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #89a3a3;
+}
+
+.approve_item {
+  margin-bottom: 16px;
+}
+
+.approve_rating_detail {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.38;
+}
+
+.approve_stars, .approve_score {
+  margin-left: 20px;
+}
+
+.approve_star {
+  margin: 2px;
+}
+
+.approve_info_detail {
+  font-size: 16px;
+  line-height: 1.38;
+}
+
+.flat_card {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 12px;
+  border: solid 1.2px #56918d;
+  border-radius: 4px;
+}
+
+.flat_address {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.38;
+}
+
+.flat_price {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.57;
+  color: #606d6d;
+}
+
+.flat_match {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.69;
+  color: #086627;
+}
+
+@media only screen and (min-width: 768px) {
+  .approve_main {
+    padding-bottom: 96px;
+  }
+  .check_icon {
+    width: auto;
+    margin: 40px 0 20px;
+  }
+  .approve_primary_title {
+    font-size: 28px;
+  }
+  .approve_link_active, .approve_link_inactive {
+    margin: 32px 0 40px;
+  }
+  .approve_content {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 32px 44px 44px;
+    border-radius: 4px;
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.2);
+  }
+  .approve_rating_detail {
+    font-size: 16px;
+  }
+  .approve_star {
+    margin: 4px;
+  }
+}
